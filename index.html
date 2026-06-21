@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutto Passa 3D — Collezione Esami di Stato</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        .font-serif-elegant { font-family: 'Cinzel', serif; }
+        .font-sans-clean { font-family: 'Montserrat', sans-serif; }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Effetto di riflesso dorato leggero per i bottoni */
+        .btn-gold-glow {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-gold-glow::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 30%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(30deg);
+            transition: none;
+        }
+        .btn-gold-glow:hover::after {
+            left: 130%;
+            transition: all 0.6s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-[#faf9f5] text-[#1c2e24] font-sans-clean antialiased">
+
+    <div class="bg-[#112219] text-[#dfc58d] text-center py-2 text-xs font-medium tracking-widest uppercase">
+        Edizione Limitata — Maturità 2026
+    </div>
+
+    <header class="border-b border-[#e5e0d4] bg-[#faf9f5]/90 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="font-serif-elegant text-xl md:text-2xl tracking-wider text-[#112219] font-bold flex items-center gap-2">
+                TUTTO PASSA <span class="text-[#bfa15f] text-sm font-sans-clean font-light tracking-normal">3D</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="#collezione" class="text-[#112219] hover:text-[#bfa15f] transition-colors">La Collezione</a>
+                <a href="#confronto" class="text-[#112219] hover:text-[#bfa15f] transition-colors">Specifiche</a>
+                <a href="#ordine" class="text-[#112219] hover:text-[#bfa15f] transition-colors">Ordinazioni</a>
+            </nav>
+            <a href="#ordine" class="btn-gold-glow border border-[#112219] text-[#112219] hover:bg-[#112219] hover:text-[#faf9f5] font-medium tracking-wider text-xs uppercase px-5 py-2.5 rounded-none transition-all duration-300">
+                Ordina Ora
+            </a>
+        </div>
+    </header>
+
+    <section class="relative py-20 md:py-32 overflow-hidden border-b border-[#e5e0d4]">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            
+            <div class="md:col-span-7 space-y-6 text-center md:text-left z-10">
+                <span class="text-[#bfa15f] uppercase tracking-widest text-xs font-semibold block">Il Portafortuna d'Autore</span>
+                <h2 class="font-serif-elegant text-4xl md:text-6xl text-[#112219] leading-tight font-medium">
+                    L'esame è un moment. <br>
+                    <span class="italic font-normal text-[#1a432e]">Tutto Passa.</span>
+                </h2>
+                <p class="text-[#4e5e55] text-base md:text-lg max-w-xl font-light leading-relaxed">
+                    Un promemoria tascabile dal design minimale ed elegante. Realizzato in stampa 3D con una tonalità verde smeraldo profonda e geometrica, studiato per accompagnare gli studenti durante la Maturità con uno stile unico e scaramantico.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#collezione" class="btn-gold-glow bg-[#112219] text-[#faf9f5] hover:bg-[#1a432e] font-semibold tracking-wider text-xs uppercase px-8 py-4 transition-all shadow-md">
+                        Esplora i Modelli
+                    </a>
+                    <a href="#ordine" class="border border-[#c6bda8] bg-white text-[#112219] hover:border-[#112219] font-semibold tracking-wider text-xs uppercase px-8 py-4 transition-all">
+                        Configura il tuo
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 flex justify-center z-10">
+                <div class="relative w-72 h-96 bg-[#1a432e] border-8 border-white shadow-2xl flex flex-col justify-between p-6 rounded-sm">
+                    <div class="absolute inset-0 border border-[#bfa15f]/20 m-2 pointer-events-none"></div>
+                    <div class="text-right text-[#dfc58d]/60 font-serif-elegant text-sm tracking-widest">2026</div>
+                    
+                    <div class="w-full bg-[#205238] py-4 px-2 text-center shadow-inner border border-[#2b6d4b] transform -rotate-3 hover:rotate-0 transition-transform duration-500 my-auto">
+                        <span class="font-serif-elegant text-[#faf9f5] text-xl tracking-widest block font-bold" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                            TUTTO PASSA
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <span class="text-[#dfc58d] text-xs uppercase tracking-widest font-medium block">Modello Esclusivo</span>
+                        <span class="text-[#faf9f5]/70 text-[10px] tracking-wider font-light">Finitura Satinata Verde Smeraldo</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-[#1a432e]/5 rounded-full filter blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-[#bfa15f]/5 rounded-full filter blur-3xl pointer-events-none"></div>
+    </section>
+
+    <section id="collezione" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <span class="text-[#bfa15f] uppercase tracking-widest text-xs font-semibold">Le Nostre Versioni</span>
+            <h3 class="font-serif-elegant text-3xl md:text-4xl text-[#112219] mt-2">Dettagli e Listino</h3>
+            <div class="w-12 h-[2px] bg-[#bfa15f] mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="bg-white border border-[#e5e0d4] p-8 rounded-none flex flex-col justify-between hover:border-[#112219] transition-all duration-300 group shadow-sm">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-[#8b9b90] font-medium block mb-1">01</span>
+                    <h4 class="font-serif-elegant text-xl text-[#112219] font-bold mb-4 group-hover:text-[#1a432e] transition-colors">Modello Essenziale</h4>
+                    <p class="text-[#5c6e63] text-sm font-light leading-relaxed mb-6">
+                        La purezza del design originale. Targhetta geometrica verde smeraldo con la scritta in rilievo "Tutto Passa". Perfetto, pulito e dal forte impatto simbolico.
+                    </p>
+                </div>
+                <div class="mt-8 border-t border-[#f2eee6] pt-6">
+                    <div class="font-serif-elegant text-2xl text-[#112219] mb-4">€ 2,00 <span class="text-xs font-sans-clean font-light text-[#8b9b90] tracking-normal">/ pezzo</span></div>
+                    <a href="#ordine" onclick="selezionaModello('normale')" class="block text-center border border-[#112219] text-[#112219] group-hover:bg-[#112219] group-hover:text-white text-xs uppercase tracking-widest font-semibold py-3 transition-all duration-300">
+                        Scegli Essenziale
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-[#112219] border border-[#112219] p-8 rounded-none flex flex-col justify-between relative shadow-xl transform md:-translate-y-2">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#bfa15f] text-[#112219] text-[10px] font-bold tracking-widest uppercase px-4 py-1">
+                    IL PIÙ RICHIESTO
+                </div>
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-[#789283] font-medium block mb-1">02</span>
+                    <h4 class="font-serif-elegant text-xl text-[#dfc58d] font-bold mb-4">Con Dedica</h4>
+                    <p class="text-[#cbded2] text-sm font-light leading-relaxed mb-6">
+                        Aggiungi un'incisione sul retro tra le nostre formule augurali selezionate (es. <span class="italic font-normal text-white">"Maturità 2026"</span>, <span class="italic font-normal text-white">"Ad Maiora"</span>). Ideale per un regalo di classe ai compagni.
+                    </p>
+                </div>
+                <div class="mt-8 border-t border-[#1a3527] pt-6">
+                    <div class="font-serif-elegant text-2xl text-[#dfc58d] mb-4">€ 3,00 <span class="text-xs font-sans-clean font-light text-[#789283] tracking-normal">/ pezzo</span></div>
+                    <a href="#ordine" onclick="selezionaModello('dedica')" class="block text-center bg-[#bfa15f] text-[#112219] hover:bg-[#faf9f5] hover:text-[#112219] text-xs uppercase tracking-widest font-semibold py-3 transition-all duration-300">
+                        Scegli Dedica
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-[#e5e0d4] p-8 rounded-none flex flex-col justify-between hover:border-[#112219] transition-all duration-300 group shadow-sm">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-[#8b9b90] font-medium block mb-1">03</span>
+                    <h4 class="font-serif-elegant text-xl text-[#112219] font-bold mb-4 group-hover:text-[#1a432e] transition-colors">Sartoriale Custom</h4>
+                    <p class="text-[#5c6e63] text-sm font-light leading-relaxed mb-6">
+                        Massima libertà espressiva. Personalizzazione totale del testo sul retro (nome dell'alunno, sezione della scuola, o una frase d'autore unica) ed eventuali varianti cromatiche su richiesta.
+                    </p>
+                </div>
+                <div class="mt-8 border-t border-[#f2eee6] pt-6">
+                    <div class="font-serif-elegant text-2xl text-[#112219] mb-4">€ 5,00 <span class="text-xs font-sans-clean font-light text-[#8b9b90] tracking-normal">/ pezzo</span></div>
+                    <a href="#ordine" onclick="selezionaModello('personalizzato')" class="block text-center border border-[#112219] text-[#112219] group-hover:bg-[#112219] group-hover:text-white text-xs uppercase tracking-widest font-semibold py-3 transition-all duration-300">
+                        Scegli Sartoriale
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="confronto" class="bg-[#f0ede6] py-16 border-t border-b border-[#e5e0d4] px-6">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="font-serif-elegant text-2xl text-center text-[#112219] mb-10 tracking-wide">Specifiche delle Opzioni</h3>
+            <div class="overflow-x-auto bg-[#faf9f5] border border-[#e5e0d4]">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[#112219] text-[#faf9f5] text-xs uppercase tracking-widest">
+                            <th class="p-4 font-medium">Specifiche</th>
+                            <th class="p-4 font-medium">Essenziale</th>
+                            <th class="p-4 font-medium">Con Dedica</th>
+                            <th class="p-4 font-medium">Sartoriale</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#e5e0d4] text-xs md:text-sm text-[#4e5e55]">
+                        <tr>
+                            <td class="p-4 font-medium text-[#112219]">Testo Fronte</td>
+                            <td class="p-4">"TUTTO PASSA" (In rilievo)</td>
+                            <td class="p-4">"TUTTO PASSA" (In rilievo)</td>
+                            <td class="p-4">"TUTTO PASSA" (In rilievo)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-[#112219]">Incisione Retro</td>
+                            <td class="p-4 text-gray-400">Assente (Retro liscio)</td>
+                            <td class="p-4 text-[#112219]">Frase Augurale Standard</td>
+                            <td class="p-4 font-medium text-[#1a432e]">Testo Libero (Nome o Frase)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-[#112219]">Materiale & Colore</td>
+                            <td class="p-4">PLA Verde Smeraldo</td>
+                            <td class="p-4">PLA Verde Smeraldo</td>
+                            <td class="p-4">Opzione Colori Custom</td>
+                        </tr>
+                        <tr class="bg-[#fcfbfa]">
+                            <td class="p-4 font-serif-elegant font-bold text-[#112219] text-base">Prezzo Unitario</td>
+                            <td class="p-4 font-serif-elegant font-bold text-[#112219] text-base">€ 2,00</td>
+                            <td class="p-4 font-serif-elegant font-bold text-[#1a432e] text-base">€ 3,00</td>
+                            <td class="p-4 font-serif-elegant font-bold text-[#bfa15f] text-base">€ 5,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="ordine" class="py-24 max-w-xl mx-auto px-6">
+        <div class="bg-white border border-[#e5e0d4] p-8 md:p-10 shadow-lg relative">
+            <div class="absolute inset-0 border border-[#bfa15f]/10 m-3 pointer-events-none"></div>
+            
+            <div class="text-center mb-8 relative">
+                <h3 class="font-serif-elegant text-2xl text-[#112219]">Richiesta di Prenotazione</h3>
+                <p class="text-[#8b9b90] text-xs font-light tracking-wide mt-1">Nessun pagamento immediato. Riceverai la conferma dei dettagli grafici via WhatsApp o Email.</p>
+            </div>
+            
+            <form id="formOrdine" class="space-y-5 relative z-10" onsubmit="gestisciInvio(event)">
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-[#112219] font-semibold mb-2">Nome e Cognome</label>
+                    <input type="text" id="nome" required class="w-full bg-[#faf9f5] border border-[#cbd5e1] px-4 py-3 text-sm rounded-none focus:border-[#112219] outline-none transition-colors">
+                </div>
+                
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-[#112219] font-semibold mb-2">Recapito Personale (WhatsApp o Email)</label>
+                    <input type="text" id="recapito" required placeholder="Es. 333 1234567 oppure nome@scuola.it" class="w-full bg-[#faf9f5] border border-[#cbd5e1] px-4 py-3 text-sm rounded-none focus:border-[#112219] outline-none transition-colors">
+                </div>
+                
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-[#112219] font-semibold mb-2">Modello Selezionato</label>
+                    <select id="modello-select" class="w-full bg-[#faf9f5] border border-[#cbd5e1] px-4 py-3 text-sm rounded-none focus:border-[#112219] outline-none transition-colors font-medium text-[#112219]">
+                        <option value="normale">Essenziale — €2,00</option>
+                        <option value="dedica">Con Dedica — €3,00</option>
+                        <option value="personalizzato">Sartoriale Custom — €5,00</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-[#112219] font-semibold mb-2">Note di Personalizzazione (Opzionale)</label>
+                    <textarea id="note" placeholder="Inserisci qui la dedica desiderata, il nome o richieste particolari sui dettagli cromatici." class="w-full bg-[#faf9f5] border border-[#cbd5e1] px-4 py-3 text-sm rounded-none focus:border-[#112219] outline-none transition-colors h-28 resize-none"></textarea>
+                </div>
+                
+                <button type="submit" id="btnInvia" class="w-full btn-gold-glow bg-[#112219] text-white hover:bg-[#1a432e] text-xs uppercase tracking-widest font-bold py-4 transition-all mt-4">
+                    Invia Richiesta 📥
+                </button>
+            </form>
+
+            <div id="messaggioSuccesso" class="hidden mt-6 p-4 bg-emerald-950 border border-emerald-500 text-emerald-200 text-xs text-center uppercase tracking-wider font-semibold">
+                Richiesta registrata! Riceverai un messaggio a breve. 🍀
+            </div>
+            <div id="messaggioErrore" class="hidden mt-6 p-4 bg-red-950 border border-red-500 text-red-200 text-xs text-center uppercase tracking-wider font-semibold">
+                Errore di rete. Controlla la connessione o riprova.
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-[#112219] text-[#8b9b90] text-center py-12 border-t border-[#1a3527] text-xs tracking-wide">
+        <div class="max-w-6xl mx-auto px-6 space-y-4">
+            <p class="font-serif-elegant text-sm text-[#dfc58d] tracking-widest">TUTTO PASSA 3D</p>
+            <p>&copy; 2026. Creato artigianalmente per gli Esami di Stato. Memento audere semper. 🍀</p>
+        </div>
+    </footer>
+
+    <script>
+        function selezionaModello(valore) {
+            const select = document.getElementById('modello-select');
+            select.value = valore;
+            document.getElementById('ordine').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        async function gestisciInvio(event) {
+            event.preventDefault(); // Impedisce il ricaricamento della pagina
+
+            const btnInvia = document.getElementById('btnInvia');
+            const msgSuccesso = document.getElementById('messaggioSuccesso');
+            const msgErrore = document.getElementById('messaggioErrore');
+
+            // Reset stato messaggi e bottone
+            msgSuccesso.classList.add('hidden');
+            msgErrore.classList.add('hidden');
+            btnInvia.disabled = true;
+            btnInvia.innerText = "TRASMISSIONE IN CORSO...";
+
+            // Mappatura dei valori per rendere il testo dell'ordine leggibile su Telegram
+            const selettoreModello = document.getElementById('modello-select');
+            const testoModello = selettoreModello.options[selettoreModello.selectedIndex].text;
+
+            // Raccolta dinamica dei dati inseriti nei campi
+            const datiOrdine = {
+                nome: document.getElementById('nome').value,
+                recapito: document.getElementById('recapito').value,
+                modello: testoModello,
+                note: document.getElementById('note').value || "Nessuna nota aggiuntiva"
+            };
+
+            try {
+                // Chiamata Fetch diretta al tuo endpoint Netlify
+                const response = await fetch('https://shimmering-licorice-ee3200.netlify.app/.netlify/functions/invia-ordine', {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(datiOrdine)
+                });
+
+                if (response.ok) {
+                    msgSuccesso.classList.remove('hidden');
+                    document.getElementById('formOrdine').reset(); // Svuota il form dopo l'invio
+                } else {
+                    msgErrore.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error("Errore riscontrato:", error);
+                msgErrore.classList.remove('hidden');
+            } finally {
+                // Ripristina lo stato del bottone d'invio
+                btnInvia.disabled = false;
+                btnInvia.innerText = "Invia Richiesta 📥";
+            }
+        }
+    </script>
+</body>
+</html>
