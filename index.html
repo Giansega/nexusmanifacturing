@@ -1,9 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutto Passa 3D — Collezione Esami di Stato</title>
+    
+    <link rel="icon" type="image/png" href="img\immagine.ico">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap');
@@ -50,6 +54,7 @@
             </a>
             <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
                 <a href="#collezione" class="text-[#112219] hover:text-[#bfa15f] transition-colors">La Collezione</a>
+                <a href="#vetrina" class="text-[#112219] hover:text-[#bfa15f] transition-colors">Galleria</a>
                 <a href="#confronto" class="text-[#112219] hover:text-[#bfa15f] transition-colors">Specifiche</a>
                 <a href="#ordine" class="text-[#112219] hover:text-[#bfa15f] transition-colors">Ordinazioni</a>
             </nav>
@@ -69,7 +74,7 @@
                     <span class="italic font-normal text-[#1a432e]">Tutto Passa.</span>
                 </h2>
                 <p class="text-[#4e5e55] text-base md:text-lg max-w-xl font-light leading-relaxed">
-                    Un promemoria tascabile dal design minimale ed elegante. Realizzato in stampa 3D con una tonalità verde smeraldo profonda e geometrica, studiato per accompagnare gli studenti durante la Maturità con uno stile unico e scaramantico.
+                    Un promemoria tascabile dal design minimale ed elegante. Realizzato in stampa 3D con una tonalità verde smeraldo profonda e geometrica, studiato per accompagner i ragazzi durante la Maturità con uno stile unico e scaramantico.
                 </p>
                 <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                     <a href="#collezione" class="btn-gold-glow bg-[#112219] text-[#faf9f5] hover:bg-[#1a432e] font-semibold tracking-wider text-xs uppercase px-8 py-4 transition-all shadow-md">
@@ -102,6 +107,39 @@
         </div>
         <div class="absolute -top-40 -left-40 w-96 h-96 bg-[#1a432e]/5 rounded-full filter blur-3xl pointer-events-none"></div>
         <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-[#bfa15f]/5 rounded-full filter blur-3xl pointer-events-none"></div>
+    </section>
+
+    <section id="vetrina" class="py-24 bg-[#fcfbfa] border-b border-[#e5e0d4]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-[#bfa15f] uppercase tracking-widest text-xs font-semibold">Dalla Stampante alle Tue Mani</span>
+                <h3 class="font-serif-elegant text-3xl md:text-4xl text-[#112219] mt-2">Il Prodotto Reale</h3>
+                <div class="w-12 h-[2px] bg-[#bfa15f] mx-auto mt-4"></div>
+                <p class="text-[#5c6e63] text-sm font-light mt-4">Ogni pezzo viene stampato singolarmente con macchinari di precisione, curando la solidità strutturale e la brillantezza dei dettagli in rilievo.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                    <div class="bg-[#faf9f5] border border-[#e5e0d4] p-3 shadow-md aspect-square relative group overflow-hidden">
+                        <img src="img\immagine1.jpeg" alt="Fronte Tutto Passa 3D" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute bottom-6 left-6 bg-[#112219]/90 backdrop-blur-sm text-[#dfc58d] px-4 py-2 text-xs uppercase tracking-widest font-medium">
+                            Vista Frontale Realistica
+                        </div>
+                    </div>
+                    <p class="text-xs text-[#5c6e63] italic text-center md:text-left">La finitura satinata geometrica cattura la luce, evidenziando il lettering tridimensionale "TUTTO PASSA".</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-[#faf9f5] border border-[#e5e0d4] p-3 shadow-md aspect-square relative group overflow-hidden">
+                        <img src="img\immagine2.jpeg" alt="Retro Dettaglio Incisione" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute bottom-6 left-6 bg-[#112219]/90 backdrop-blur-sm text-[#dfc58d] px-4 py-2 text-xs uppercase tracking-widest font-medium">
+                            Finitura del Retro
+                        </div>
+                    </div>
+                    <p class="text-xs text-[#5c6e63] italic text-center md:text-left">Superficie posteriore liscia o incisa al laser per i modelli "Con Dedica" e "Sartoriale Custom".</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="collezione" class="py-24 max-w-6xl mx-auto px-6">
@@ -185,12 +223,12 @@
                             <td class="p-4 font-medium text-[#112219]">Testo Fronte</td>
                             <td class="p-4">"TUTTO PASSA" (In rilievo)</td>
                             <td class="p-4">"TUTTO PASSA" (In rilievo)</td>
-                            <td class="p-4">"TUTTO PASSA" (In rilievo)</td>
+                            <td class="p-4">"Testo Libero" (In rilievo)</td>
                         </tr>
                         <tr>
                             <td class="p-4 font-medium text-[#112219]">Incisione Retro</td>
                             <td class="p-4 text-gray-400">Assente (Retro liscio)</td>
-                            <td class="p-4 text-[#112219]">Frase Augurale Standard</td>
+                            <td class="p-4 text-[#112219]">Testo Libero</td>
                             <td class="p-4 font-medium text-[#1a432e]">Testo Libero (Nome o Frase)</td>
                         </tr>
                         <tr>
@@ -208,6 +246,9 @@
                     </tbody>
                 </table>
             </div>
+            <div class="mt-6 bg-[#112219] text-[#faf9f5] p-4 text-xs tracking-wide uppercase text-center font-medium">
+                📦 Ordine di classe o di gruppo? Se l'ordine è consistente, la consegna può essere effettuata di persona direttamente davanti alla tua scuola!
+            </div>
         </div>
     </section>
 
@@ -217,7 +258,7 @@
             
             <div class="text-center mb-8 relative">
                 <h3 class="font-serif-elegant text-2xl text-[#112219]">Richiesta di Prenotazione</h3>
-                <p class="text-[#8b9b90] text-xs font-light tracking-wide mt-1">Nessun pagamento immediato. Riceverai la conferma dei dettagli grafici via WhatsApp o Email.</p>
+                <p class="text-[#8b9b90] text-xs font-light tracking-wide mt-1">Nessun pagamento immediato. Riceverai la conferma dei dettagli grafici e di consegna via WhatsApp o Email.</p>
             </div>
             
             <form id="formOrdine" class="space-y-5 relative z-10" onsubmit="gestisciInvio(event)">
@@ -239,10 +280,11 @@
                         <option value="personalizzato">Sartoriale Custom — €5,00</option>
                     </select>
                 </div>
-                
+
+
                 <div>
                     <label class="block text-xs uppercase tracking-widest text-[#112219] font-semibold mb-2">Note di Personalizzazione (Opzionale)</label>
-                    <textarea id="note" placeholder="Inserisci qui la dedica desiderata, il nome o richieste particolari sui dettagli cromatici." class="w-full bg-[#faf9f5] border border-[#cbd5e1] px-4 py-3 text-sm rounded-none focus:border-[#112219] outline-none transition-colors h-28 resize-none"></textarea>
+                    <textarea id="note" placeholder="Inserisci qui la dedica desiderata, il nome, l'eventuale istituto scolastico per la consegna in blocco o altre richieste particolari." class="w-full bg-[#faf9f5] border border-[#cbd5e1] px-4 py-3 text-sm rounded-none focus:border-[#112219] outline-none transition-colors h-28 resize-none"></textarea>
                 </div>
                 
                 <button type="submit" id="btnInvia" class="w-full btn-gold-glow bg-[#112219] text-white hover:bg-[#1a432e] text-xs uppercase tracking-widest font-bold py-4 transition-all mt-4">
@@ -291,7 +333,9 @@
             const selettoreModello = document.getElementById('modello-select');
             const testoModello = selettoreModello.options[selettoreModello.selectedIndex].text;
 
-            // Raccolta dinamica dei dati inseriti nei campi
+            
+
+            // Raccolta dinamica dei dati inseriti nei campi inclusa la preferenza di consegna
             const datiOrdine = {
                 nome: document.getElementById('nome').value,
                 recapito: document.getElementById('recapito').value,
@@ -327,3 +371,4 @@
     </script>
 </body>
 </html>
+
